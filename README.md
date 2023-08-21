@@ -1,3 +1,7 @@
+#THIS REPOSITORY IS A WORK IN PROGRESS.
+
+
+
 This is an encryption test in the C programming language.
 
 ______________________________________________________
