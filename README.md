@@ -1,7 +1,3 @@
-# THIS REPOSITORY IS A WORK IN PROGRESS HARDLY ANY CODE IS IMPLEMENTED YET.
-
-______________________________________________________
-
 # Basics of Cryptography in C
 
 This repository aims to explain the basic concepts of the field of cryptography, with a brief description and implementation in C. In this repository we will discuss, with implemented examples, the concepts of basic ciphers, hashing and encryption.
@@ -69,6 +65,8 @@ Reading the columns in the order of the keyword "KEY" gives us the encrypted mes
 
 Hashing is the process of converting input data (a message, a file, a password, etc.) into a fixed-size value (usually a sequence of characters) called a hash or hash value. Hash functions are designed to be fast to compute and deterministic, meaning the same input will always produce the same hash output. Reverse engineering a hashed key is extremely difficult, and therefore this method is used for storing sensitive information, like passwords. Hashing is widely used for data integrity verification, as even a small change in the input data will result in a significantly different hash value.
 
+![hashing](img/hashing.png)
+
 As cryptography is ever-evolving to keep up with the technological advancements, so are hashing functions. Some older hashing functions are considered obsolete, like MD5, while newer, more advanced hasing functions are being developed to keep up with the times. Newer hashing functions include SHA-256 and ARGON2, which is written entirely in C.
 
 For example, if we have the input string "Hello, world!", hashing it using SHA-256 might produce the hash:
@@ -102,6 +100,9 @@ In symmetric encryption, the same key is used for both encryption and decryption
   Encryption: The plaintext is combined with the secret key using an encryption algorithm, resulting in ciphertext. The same key is used for both encryption and decryption.
   Decryption: The recipient uses the same secret key and the decryption algorithm to convert the ciphertext back to plaintext.
 ```
+
+![symmetric_encryption](img/symmetricEnc.png)
+
 Advantages of symmetric encryption include its efficiency and speed. However, the challenge lies in securely distributing and managing the secret keys between parties.
 Examples of symmetric encryption algorithms include the Data Encryption Standard (DES), the Advanced Encryption Standard (AES), and the 3DES (Triple DES) algorithm.
 
@@ -113,6 +114,9 @@ Asymmetric encryption, also known as public-key cryptography, uses a pair of mat
     Encryption: The sender uses the recipient's public key to encrypt the plaintext, resulting in ciphertext.
     Decryption: The recipient uses their private key to decrypt the ciphertext back to plaintext.
 ```
+
+![asymmetric_encryption](img/asymmetricEnc.png)
+
 One of the key advantages of asymmetric encryption is its ability to establish secure communication channels without sharing secret keys. However, asymmetric encryption is usually slower than symmetric encryption due to the complexity of the mathematical operations involved.
 Examples of asymmetric encryption algorithms include RSA (Rivest-Shamir-Adleman) and ECC (Elliptic Curve Cryptography).
 
