@@ -1,7 +1,3 @@
-# THIS REPOSITORY IS A WORK IN PROGRESS HARDLY ANY CODE IS IMPLEMENTED YET.
-
-______________________________________________________
-
 # Basics of Cryptography in C
 
 This repository aims to explain the basic concepts of the field of cryptography, with a brief description and implementation in C. In this repository we will discuss, with implemented examples, the concepts of basic ciphers, hashing and encryption.
